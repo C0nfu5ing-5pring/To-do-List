@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/checklist.png" type="image/x-icon" />
+    <link rel="stylesheet" href="output.css" />
+    <title>To-do list</title>
+  </head>
+  <body class="bg-cruise-50 flex align-middle items-center justify-center">
+    <div
+      id="card"
+      class="flex flex-col bg-cruise-200 rounded-xl p-6 h-[600px] overflow-y-auto"
+    >
+      <div class="m-3">
+        <h1
+          class="text-center text-4xl font-semibold bg-cruise-900 py-2 px-3 rounded-full text-cruise-50"
+        >
+          To-do list
+        </h1>
+      </div>
+      <div class="py-4">
+        <form id="form" class="flex items-center justify-start gap-10">
+          <input
+            type="text"
+            class="py-2 px-4 text-base outline-none rounded-full placeholder:text-cruise-300 text-cruise-500"
+            placeholder="Go ahead write it!"
+            id="task"
+          />
+          <button
+            class="py-2 px-4 text-base rounded-full bg-cruise-400 hover:bg-cruise-500 transition-colors text-cruise-50"
+            id="addTaskBtn"
+          >
+            Add
+          </button>
+        </form>
+      </div>
+      <div id="userTaskContainer" class="p-2">
+        <h1 class="mb-2 text-2xl font-semibold text-cruise-700">Tasks</h1>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
